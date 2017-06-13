@@ -1,0 +1,154 @@
+$border:solid 1px #ccc;
+
+.serach-page{
+	background-color: #fff;
+	font-size: 0.75rem;
+	color:#000;
+	font-weight: normal;
+
+	.search-title{
+		width: 100%;
+		height:3.125rem;
+		line-height: 3.125rem;
+		background-color: #de5454;
+		font-size: 1.5rem;
+		box-sizing: border-box;
+		text-align: center;
+
+		.title-back{
+			width: 1.875rem;
+			height:2.825rem;
+			line-height: 3.125rem;
+			position: absolute;
+			left: 0.625rem;
+			top: 0;
+			color:#fff;
+			padding-right: 0.625rem;
+			margin:0.15rem 0;
+			border-right: $border;
+			text-align: right;
+			font-size: 1.5rem;
+			box-sizing: border-box;
+		}
+
+		.title-search{
+			width: 1.875rem;
+			height:2.825rem;
+			line-height: 3.125rem;
+			position: absolute;
+			right: 0.625rem;
+			top: 0;
+			color:#fff;
+			padding-left: 0.625rem;
+			margin:0.15rem 0;
+			border-left: $border;
+			text-align: left;
+			font-size: 1.5rem;
+			box-sizing: border-box;
+		}
+
+		.title-del{
+			width: 1.875rem;
+			height:3.125rem;
+			line-height: 3.125rem;
+			position: absolute;
+			right: 2.5rem;
+			top: 0;
+			color:#fff;
+			text-align: center;
+			font-size: 1.5rem;
+		}
+
+		.search-input{
+			background: transparent;
+			border:0;
+			width: 60%;
+			height: 1.25rem;
+			font-size: 1rem;
+			margin:0 auto;
+			color:#fff;
+			outline: medium;
+		}
+
+	}
+
+
+	.book-list{
+		width: 100%;
+		height:auto;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+
+		.book-item{
+			width:23.4375rem;
+			min-height: 5.0625rem;
+			padding: 0.625rem 1.25rem;
+			border-bottom: $border;
+			box-sizing: border-box;
+			display: flex;
+			position: relative;
+			left:0rem;
+			text-decoration: none;
+			color:#000;
+
+			.book-img{
+				width:2.8125rem;
+				height:3.75rem;
+			}
+
+			.book-info{
+				width: 18.125rem;
+				height:auto;
+				box-sizing: border-box;
+				padding: 0 0.625rem;
+
+				.book-title{
+					font-size: 1.25rem;
+					font-weight: bold;
+					padding-bottom: 0.625rem;
+				}
+
+				.book-desc{
+					font-size: 0.875rem;
+					color:#ccc;
+				}
+
+			}
+		}
+
+	}
+
+	.his-component{
+		width: 100%;
+		padding: 0.625rem 1.25rem;
+		box-sizing: border-box;
+
+		.his-title{
+			color:#000;
+			font-size: 1.25rem;
+			padding-bottom: 0.625rem;
+		}
+
+		.his-contain{
+			width:100%;
+			display: flex;
+			flex-wrap:wrap;
+
+			.his-item{
+				border-radius: 5px;
+				display: inline-block;
+				color:#fff;
+				padding: 0.1875rem 0.625rem;
+				margin: 0.3125rem 0.3125rem;
+			}
+		}
+		
+		.his-del{
+			padding: 0.625rem 0;
+			text-align: center;
+			width: 100%;
+		}
+	}
+
+}

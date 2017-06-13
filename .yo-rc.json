@@ -1,0 +1,9 @@
+{
+  "generator-react-webpack": {
+    "appName": "jjy-reader",
+    "style": "scss",
+    "cssmodules": true,
+    "postcss": true,
+    "generatedWithVersion": 4
+  }
+}
