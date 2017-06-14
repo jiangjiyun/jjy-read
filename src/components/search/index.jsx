@@ -46,7 +46,7 @@ class SearchPage extends React.Component{
     }
     localStorage.setItem("searchHis",newHisStr);
 
-    fetch('/php/data.php?'+encodeURIComponent('http://api.zhuishushenqi.com/book/fuzzy-search?query='+encodeURIComponent(searchName)+'&start=0&limit=5'))
+    fetch('/zhuishusq/book/fuzzy-search?query='+encodeURIComponent(searchName)+'&start=0&limit=5')
     .then(function(response) {
       return response.json()
     }).then(function(json) {
@@ -73,7 +73,7 @@ class SearchPage extends React.Component{
 
   changeSearch(word){
     console.log(word);
-    fetch('/php/data.php?'+encodeURIComponent('http://api.zhuishushenqi.com/book/fuzzy-search?query='+encodeURIComponent(word)+'&start=0&limit=5'))
+    fetch('/zhuishusq/book/fuzzy-search?query='+encodeURIComponent(word)+'&start=0&limit=5')
     .then(function(response) {
       return response.json()
     }).then(function(json) {

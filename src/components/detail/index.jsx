@@ -133,7 +133,7 @@ class DetailPage extends React.Component{
   componentDidMount(){
     this.getLocalBookList.bind(this)();
     let bookId=this.props.match.params.id;
-    fetch('/php/data.php?'+encodeURIComponent('http://api.zhuishushenqi.com/book/'+bookId))
+    fetch('/zhuishusq/book/'+bookId)
     .then(function(response) {
       return response.json()
     }).then(function(json) {

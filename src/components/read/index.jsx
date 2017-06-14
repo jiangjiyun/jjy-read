@@ -166,7 +166,7 @@ class ReadPage extends React.Component{
   }
 
   getChapter(url){//获取章节内容;
-    fetch('/php/data.php?'+encodeURIComponent('http://chapter2.zhuishushenqi.com/chapter/'+encodeURIComponent(url)+'?k=2124b73d7e2e1945&t=1468223717')).then((response)=>{
+    fetch('/chapter/'+encodeURIComponent(url)+'?k=2124b73d7e2e1945&t=1468223717').then((response)=>{
       return response.json();
     }).then((json)=>{
       this.setState({
@@ -177,7 +177,7 @@ class ReadPage extends React.Component{
   }
 
   getChpaterList(obj,id){//获取章节列表;
-    fetch('/php/data.php?'+encodeURIComponent('http://api.zhuishushenqi.com/toc/'+(obj.sourceId||id)+'?view=chapters')).then((response)=>{
+    fetch('/zhuishusq/toc/'+(obj.sourceId||id)+'?view=chapters').then((response)=>{
       return response.json();
     }).then((json)=>{
       let readNum=obj.chapterNum?obj.chapterNum:0;
@@ -200,7 +200,7 @@ class ReadPage extends React.Component{
   }
 
   getSourceList(obj,id){//获取书源列表;
-    fetch('/php/data.php?'+encodeURIComponent('http://api.zhuishushenqi.com/toc?view=summary&book='+id)).then((response)=>{
+    fetch('/zhuishusq/toc?view=summary&book='+id).then((response)=>{
       return response.json();
     }).then((json)=>{
       let sourceNum=1;
